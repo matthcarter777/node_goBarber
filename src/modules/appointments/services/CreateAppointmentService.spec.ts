@@ -4,6 +4,8 @@ import FakeAppointmentsRepository from '../repositories/fakes/FakeAppointmentsRe
 import CreateAppointmentService from './CreateAppointmentService';
 
 describe('CreateAppointment', () => {
+    beforeEach(() => {});
+
     it('shoult be able to create a new appointment', async () => {
         const fakeAppointmentsRepository = new FakeAppointmentsRepository();
         const createAppointment = new CreateAppointmentService(
